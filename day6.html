@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+label{color: rgba(206, 86, 186, 0.822);}
+
+    </style>
+</head>
+<body>
+    <form>
+    
+      <label for="birth">
+        <img src="birth (2).jpg" width="18" height="20">Choose your birthday</label>
+        <input type="date" id="birth" name="birth" 
+        value="2000-02-02" min="1990-02-02" max="2001-01-01" 
+        style="color: rgb(145, 27, 7);">
+         <h4 style="color:darkgreen ;">Your choosen date:</h4>
+        <p style="color:rgb(44, 160, 175) ;">yy-mm-dd</p>
+    </form>
+    <button onclick="buttonAction()"><h4 style="color:rgb(194, 7, 23) ;">Click</h4></button>
+    <script>
+      var date=  document.querySelector('input[type="date"]');
+      var paragraph=document.querySelector('p');
+      button.addEventListener('click',buttonAction);
+      function buttonAction(){
+        paragraph.textContent=date.value;
+      }
+    </script>
+     
+     
+     <pre style="font-style:italic ;"><a href="another.html">Explaination</a></pre>
+</body>
+</html>
